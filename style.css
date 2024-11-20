@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bars {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+nav {
+    padding: 1.5rem 2rem;
+    height: 8vh;
+    background-color: #222831;
+    color: #fff;
+}
+#menu-btn {
+    background-color: #222831;
+    border: none;
+    cursor: pointer;
+}
+.menu {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    background: #222831;
+    z-index: 1;
+    width: 200px;
+}
+.menu a {
+    color: #fff;
+    padding: 1rem 1.5rem;
+    display: block;
+    text-decoration: none;
+}
+main{
+    background-color: rgb(247, 228, 204);
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contents {
+    display: flex;
+    justify-content: center;
+    min-width : 80%;
+    min-height: 45vh;
+    margin: 20px;
+    background-color: white;
+    border-radius: 2%;
+}
+table, td, tr{
+    width: 90%;
+}
+td {
+    text-align: center;
+    font-size: 2.2rem;
+}
+.img-td {
+    width: auto;
+}
+
+@media only screen and (min-width: 992px) {
+    main{
+        margin-left: 10vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contents{
+        min-width: 40%;
+    }
+    td {
+        font-size: 1.5rem;
+    }
+    #menu-btn {
+        display: none;
+    }
+    .menu{
+        display: block;
+        z-index: initial;
+        height: 100vh;
+    }
+}
